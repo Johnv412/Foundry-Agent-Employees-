@@ -1,0 +1,45 @@
+{
+  "name": "wp-socket-system",
+  "version": "1.0.0",
+  "description": "WordPress & SEO Socket System with Claude Code Sub-Agents",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest",
+    "build": "node core/builder.js",
+    "demo": "node demo/workflow.js"
+  },
+  "dependencies": {
+    "ws": "^8.14.2",
+    "axios": "^1.6.0",
+    "express": "^4.18.2",
+    "commander": "^11.1.0",
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.6",
+    "cheerio": "^1.0.0-rc.12",
+    "puppeteer": "^21.5.0",
+    "wordpress-rest-api": "^1.0.8",
+    "dotenv": "^16.3.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.7.0",
+    "@types/node": "^20.8.0"
+  },
+  "keywords": [
+    "wordpress",
+    "seo",
+    "directory",
+    "socket",
+    "claude-code",
+    "sub-agents",
+    "automation"
+  ],
+  "author": "Foundry OS Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
