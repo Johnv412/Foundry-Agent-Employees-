@@ -1,0 +1,128 @@
+[
+  {
+    "type": "appointment_booking",
+    "socket": "dental",
+    "data": {
+      "patientName": "John Smith",
+      "dentistId": "dr_johnson_001",
+      "appointmentDate": "2024-08-05T14:30:00.000Z",
+      "serviceType": "cleaning",
+      "duration": 60,
+      "notes": "Regular cleaning and checkup",
+      "insuranceInfo": {
+        "provider": "BlueCross BlueShield",
+        "policyNumber": "BC123456789",
+        "groupNumber": "GRP001"
+      }
+    },
+    "description": "Standard dental appointment booking"
+  },
+  {
+    "type": "dentist_registration",
+    "socket": "dental",
+    "data": {
+      "personalInfo": {
+        "name": "Dr. Sarah Johnson",
+        "email": "sarah.johnson@dentalpractice.com",
+        "phone": "555-0123",
+        "licenseNumber": "DDS12345"
+      },
+      "credentials": {
+        "licenseNumber": "DDS12345",
+        "school": "Harvard School of Dental Medicine",
+        "graduationYear": 2015,
+        "certifications": ["General Dentistry", "Cosmetic Dentistry"]
+      },
+      "practiceInfo": {
+        "name": "Johnson Dental Care",
+        "address": "123 Main Street, Anytown, ST 12345",
+        "phone": "555-0123",
+        "website": "www.johnsondental.com"
+      },
+      "specialties": ["General Dentistry", "Cosmetic Dentistry", "Pediatric Dentistry"],
+      "availability": {
+        "monday": { "start": "09:00", "end": "17:00" },
+        "tuesday": { "start": "09:00", "end": "17:00" },
+        "wednesday": { "start": "09:00", "end": "17:00" },
+        "thursday": { "start": "09:00", "end": "17:00" },
+        "friday": { "start": "09:00", "end": "15:00" }
+      }
+    },
+    "description": "New dentist registration with full credentials"
+  },
+  {
+    "type": "patient_registration",
+    "socket": "dental",
+    "data": {
+      "patientInfo": {
+        "name": "Alice Williams",
+        "dateOfBirth": "1985-06-15",
+        "gender": "female",
+        "ssn": "***-**-1234"
+      },
+      "contactInfo": {
+        "email": "alice.williams@email.com",
+        "phone": "555-0456",
+        "address": {
+          "street": "456 Oak Avenue",
+          "city": "Anytown",
+          "state": "ST",
+          "zipCode": "12345"
+        }
+      },
+      "medicalHistory": {
+        "allergies": ["penicillin", "latex"],
+        "conditions": ["diabetes", "high blood pressure"],
+        "medications": ["metformin", "lisinopril"],
+        "emergencyContact": {
+          "name": "Bob Williams",
+          "phone": "555-0789",
+          "relationship": "spouse"
+        }
+      },
+      "insuranceInfo": {
+        "provider": "Aetna",
+        "policyNumber": "AET789012345",
+        "groupNumber": "GRP002",
+        "effectiveDate": "2024-01-01"
+      }
+    },
+    "description": "Comprehensive patient registration with medical history"
+  },
+  {
+    "type": "appointment_booking",
+    "socket": "dental",
+    "data": {
+      "patientName": "Mike Davis",
+      "dentistId": "dr_martinez_002",
+      "appointmentDate": "2024-08-06T10:00:00.000Z",
+      "serviceType": "filling",
+      "duration": 90,
+      "notes": "Tooth #14 needs composite filling",
+      "urgency": "normal",
+      "insuranceInfo": {
+        "provider": "Delta Dental",
+        "policyNumber": "DD987654321"
+      }
+    },
+    "description": "Dental filling appointment"
+  },
+  {
+    "type": "appointment_booking",
+    "socket": "dental",
+    "data": {
+      "patientName": "Emma Thompson",
+      "dentistId": "dr_johnson_001",
+      "appointmentDate": "2024-08-07T16:00:00.000Z",
+      "serviceType": "crown",
+      "duration": 120,
+      "notes": "Crown placement for tooth #19, second visit",
+      "previousAppointment": "APT-001234",
+      "insuranceInfo": {
+        "provider": "Cigna",
+        "policyNumber": "CIG456789123"
+      }
+    },
+    "description": "Crown placement appointment"
+  }
+]

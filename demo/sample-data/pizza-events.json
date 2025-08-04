@@ -1,0 +1,199 @@
+[
+  {
+    "type": "online_order",
+    "socket": "pizza",
+    "data": {
+      "customerInfo": {
+        "name": "Mike Wilson",
+        "email": "mike.wilson@email.com",
+        "phone": "555-0321"
+      },
+      "orderItems": [
+        {
+          "name": "Margherita Pizza",
+          "size": "large",
+          "quantity": 1,
+          "price": 18.99,
+          "toppings": ["fresh basil", "mozzarella", "tomato sauce"]
+        },
+        {
+          "name": "Garlic Bread",
+          "quantity": 2,
+          "price": 5.99
+        },
+        {
+          "name": "Caesar Salad",
+          "quantity": 1,
+          "price": 7.99
+        }
+      ],
+      "orderType": "delivery",
+      "deliveryAddress": {
+        "street": "789 Pine Street",
+        "apartment": "Apt 2B",
+        "city": "Anytown",
+        "state": "ST",
+        "zipCode": "12345"
+      },
+      "paymentMethod": "credit_card",
+      "specialInstructions": "Extra cheese, light sauce. Ring doorbell twice.",
+      "totalAmount": 32.97,
+      "estimatedDeliveryTime": "45 minutes",
+      "tip": 5.00
+    },
+    "description": "Large pizza delivery order with sides"
+  },
+  {
+    "type": "restaurant_registration",
+    "socket": "pizza",
+    "data": {
+      "restaurantInfo": {
+        "name": "Tony's Pizza Palace",
+        "address": "321 Food Street, Anytown, ST 12345",
+        "phone": "555-PIZZA",
+        "email": "orders@tonyspizza.com",
+        "website": "www.tonyspizzapalace.com"
+      },
+      "ownerInfo": {
+        "name": "Tony Romano",
+        "email": "tony@tonyspizza.com",
+        "phone": "555-0654",
+        "licenseNumber": "FOOD-LIC-12345"
+      },
+      "menuData": [
+        {
+          "category": "Pizza",
+          "items": [
+            { "name": "Margherita", "sizes": ["small", "medium", "large"], "basePrice": 12.99 },
+            { "name": "Pepperoni", "sizes": ["small", "medium", "large"], "basePrice": 14.99 },
+            { "name": "Supreme", "sizes": ["small", "medium", "large"], "basePrice": 18.99 },
+            { "name": "Hawaiian", "sizes": ["small", "medium", "large"], "basePrice": 16.99 }
+          ]
+        },
+        {
+          "category": "Sides",
+          "items": [
+            { "name": "Garlic Bread", "price": 5.99 },
+            { "name": "Caesar Salad", "price": 7.99 },
+            { "name": "Buffalo Wings", "price": 9.99 }
+          ]
+        },
+        {
+          "category": "Beverages",
+          "items": [
+            { "name": "Soft Drinks", "price": 2.99 },
+            { "name": "Beer", "price": 4.99 },
+            { "name": "Wine", "price": 6.99 }
+          ]
+        }
+      ],
+      "deliveryAreas": [
+        { "zone": "Downtown", "fee": 2.99, "minOrder": 15.00 },
+        { "zone": "University District", "fee": 3.99, "minOrder": 20.00 },
+        { "zone": "Suburbs", "fee": 4.99, "minOrder": 25.00 }
+      ],
+      "operatingHours": {
+        "monday": { "open": "11:00", "close": "23:00" },
+        "tuesday": { "open": "11:00", "close": "23:00" },
+        "wednesday": { "open": "11:00", "close": "23:00" },
+        "thursday": { "open": "11:00", "close": "23:00" },
+        "friday": { "open": "11:00", "close": "24:00" },
+        "saturday": { "open": "11:00", "close": "24:00" },
+        "sunday": { "open": "12:00", "close": "22:00" }
+      }
+    },
+    "description": "Complete pizza restaurant registration"
+  },
+  {
+    "type": "menu_update",
+    "socket": "pizza",
+    "data": {
+      "restaurantId": "rest_tony_001",
+      "menuChanges": [
+        {
+          "action": "add",
+          "item": {
+            "name": "BBQ Chicken Pizza",
+            "category": "Pizza",
+            "sizes": ["small", "medium", "large"],
+            "basePrice": 17.99,
+            "description": "Smoky BBQ sauce with grilled chicken and red onions"
+          }
+        },
+        {
+          "action": "price_change",
+          "item": "Pepperoni",
+          "oldPrice": 14.99,
+          "newPrice": 15.99,
+          "reason": "Ingredient cost increase"
+        },
+        {
+          "action": "remove",
+          "item": "Hawaiian",
+          "reason": "Low demand"
+        }
+      ],
+      "changeType": "mixed",
+      "effectiveDate": "2024-08-05T00:00:00.000Z",
+      "updatedBy": "manager_001",
+      "approvedBy": "owner_tony"
+    },
+    "description": "Monthly menu update with new items and price changes"
+  },
+  {
+    "type": "delivery_request",
+    "socket": "pizza",
+    "data": {
+      "orderId": "order_123456",
+      "restaurantId": "rest_tony_001",
+      "deliveryAddress": {
+        "street": "456 Elm Street",
+        "apartment": "Unit 3A",
+        "city": "Anytown",
+        "state": "ST",
+        "zipCode": "12345"
+      },
+      "customerPhone": "555-0987",
+      "deliveryInstructions": "Ring doorbell twice, leave at door if no answer within 2 minutes",
+      "estimatedTime": 30,
+      "deliveryFee": 3.99,
+      "driverAssigned": "driver_002",
+      "orderTotal": 28.97,
+      "priority": "normal"
+    },
+    "description": "Standard delivery request for pizza order"
+  },
+  {
+    "type": "online_order",
+    "socket": "pizza",
+    "data": {
+      "customerInfo": {
+        "name": "Sarah Chen",
+        "email": "sarah.chen@email.com",
+        "phone": "555-0654"
+      },
+      "orderItems": [
+        {
+          "name": "Supreme Pizza",
+          "size": "medium",
+          "quantity": 2,
+          "price": 16.99,
+          "customizations": ["extra cheese", "thin crust"]
+        },
+        {
+          "name": "Buffalo Wings",
+          "quantity": 1,
+          "price": 9.99,
+          "sauce": "mild"
+        }
+      ],
+      "orderType": "pickup",
+      "paymentMethod": "paypal",
+      "specialInstructions": "Please call when ready for pickup",
+      "totalAmount": 43.97,
+      "estimatedPickupTime": "25 minutes",
+      "loyaltyPoints": 150
+    },
+    "description": "Pickup order with loyalty points"
+  }
+]

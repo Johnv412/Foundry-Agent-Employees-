@@ -1,0 +1,228 @@
+[
+  {
+    "type": "business_registration",
+    "socket": "restaurant",
+    "data": {
+      "businessInfo": {
+        "name": "Bella Vista Restaurant",
+        "type": "fine_dining",
+        "cuisine": "Italian",
+        "address": {
+          "street": "123 Gourmet Boulevard",
+          "city": "Anytown",
+          "state": "ST",
+          "zipCode": "12345"
+        },
+        "phone": "555-BELLA",
+        "email": "info@bellavista.com",
+        "website": "www.bellavista.com"
+      },
+      "ownerInfo": {
+        "name": "Giuseppe Romano",
+        "email": "giuseppe@bellavista.com",
+        "phone": "555-0123",
+        "licenseNumber": "REST-LIC-67890"
+      },
+      "menuCategories": [
+        {
+          "name": "Appetizers",
+          "items": ["Bruschetta", "Antipasto Platter", "Calamari Fritti"]
+        },
+        {
+          "name": "Pasta",
+          "items": ["Spaghetti Carbonara", "Fettuccine Alfredo", "Penne Arrabbiata"]
+        },
+        {
+          "name": "Main Courses",
+          "items": ["Osso Buco", "Chicken Parmigiana", "Grilled Salmon"]
+        },
+        {
+          "name": "Desserts",
+          "items": ["Tiramisu", "Panna Cotta", "Gelato"]
+        }
+      ],
+      "operatingHours": {
+        "tuesday": { "open": "17:00", "close": "22:00" },
+        "wednesday": { "open": "17:00", "close": "22:00" },
+        "thursday": { "open": "17:00", "close": "22:00" },
+        "friday": { "open": "17:00", "close": "23:00" },
+        "saturday": { "open": "17:00", "close": "23:00" },
+        "sunday": { "open": "17:00", "close": "21:00" }
+      },
+      "seatingCapacity": 80,
+      "reservationPolicy": "required",
+      "dressCode": "business_casual",
+      "specialServices": ["private_dining", "wine_pairing", "catering"]
+    },
+    "description": "Fine dining Italian restaurant registration"
+  },
+  {
+    "type": "reservation_booking",
+    "socket": "restaurant",
+    "data": {
+      "customerInfo": {
+        "name": "Jennifer Adams",
+        "email": "jennifer.adams@email.com",
+        "phone": "555-0456"
+      },
+      "reservationDetails": {
+        "date": "2024-08-05",
+        "time": "19:30",
+        "partySize": 4,
+        "duration": 120,
+        "tablePreference": "window",
+        "occasion": "anniversary"
+      },
+      "specialRequests": [
+        "quiet table",
+        "vegetarian options needed",
+        "wine pairing recommendations"
+      ],
+      "dietaryRestrictions": ["vegetarian", "gluten-free"],
+      "contactPreference": "email",
+      "loyaltyMember": true,
+      "previousVisits": 3
+    },
+    "description": "Anniversary dinner reservation for four"
+  },
+  {
+    "type": "review_submitted",
+    "socket": "restaurant",
+    "data": {
+      "reviewerInfo": {
+        "name": "David Wilson",
+        "email": "david.wilson@email.com",
+        "verified": true
+      },
+      "restaurantId": "rest_bella_001",
+      "visitDate": "2024-08-03",
+      "rating": {
+        "overall": 4.5,
+        "food": 5.0,
+        "service": 4.0,
+        "atmosphere": 4.5,
+        "value": 4.0
+      },
+      "reviewText": "Excellent Italian cuisine with authentic flavors. The osso buco was perfectly prepared and the service was attentive. Atmosphere is romantic and perfect for special occasions. Slightly pricey but worth it for the quality.",
+      "recommendedDishes": ["Osso Buco", "Tiramisu", "House Wine"],
+      "photos": ["review_photo_001.jpg", "review_photo_002.jpg"],
+      "wouldRecommend": true,
+      "partySize": 2,
+      "totalSpent": 125.50
+    },
+    "description": "Detailed customer review with ratings"
+  },
+  {
+    "type": "menu_update",
+    "socket": "restaurant",
+    "data": {
+      "restaurantId": "rest_bella_001",
+      "updateType": "seasonal_menu",
+      "effectiveDate": "2024-08-05",
+      "menuChanges": [
+        {
+          "action": "add",
+          "category": "Seasonal Specials",
+          "items": [
+            {
+              "name": "Summer Truffle Risotto",
+              "price": 32.00,
+              "description": "Arborio rice with summer truffles and parmesan",
+              "ingredients": ["arborio rice", "summer truffles", "parmesan", "white wine"],
+              "allergens": ["dairy", "alcohol"]
+            },
+            {
+              "name": "Grilled Peach Salad",
+              "price": 16.00,
+              "description": "Mixed greens with grilled peaches and burrata",
+              "ingredients": ["mixed greens", "peaches", "burrata", "balsamic glaze"],
+              "allergens": ["dairy"]
+            }
+          ]
+        },
+        {
+          "action": "remove",
+          "items": ["Winter Soup", "Braised Short Ribs"],
+          "reason": "End of winter season"
+        },
+        {
+          "action": "price_update",
+          "items": [
+            { "name": "Spaghetti Carbonara", "oldPrice": 24.00, "newPrice": 26.00 },
+            { "name": "Chicken Parmigiana", "oldPrice": 28.00, "newPrice": 30.00 }
+          ]
+        }
+      ],
+      "updatedBy": "chef_mario",
+      "approvedBy": "owner_giuseppe"
+    },
+    "description": "Summer seasonal menu update with new specials"
+  },
+  {
+    "type": "rating_updated",
+    "socket": "restaurant",
+    "data": {
+      "restaurantId": "rest_bella_001",
+      "platform": "google_reviews",
+      "newRating": 4.6,
+      "previousRating": 4.5,
+      "totalReviews": 247,
+      "newReviews": 8,
+      "ratingBreakdown": {
+        "5_stars": 162,
+        "4_stars": 58,
+        "3_stars": 19,
+        "2_stars": 5,
+        "1_star": 3
+      },
+      "averageByCategory": {
+        "food": 4.7,
+        "service": 4.4,
+        "atmosphere": 4.6,
+        "value": 4.3
+      },
+      "competitorComparison": {
+        "local_average": 4.2,
+        "rank_in_area": 3
+      },
+      "updateDate": "2024-08-04T12:00:00.000Z"
+    },
+    "description": "Monthly rating and review analytics update"
+  },
+  {
+    "type": "event_booking",
+    "socket": "restaurant",
+    "data": {
+      "eventInfo": {
+        "name": "Corporate Dinner",
+        "type": "private_dining",
+        "date": "2024-08-10",
+        "time": "18:00",
+        "duration": 180,
+        "guestCount": 25
+      },
+      "clientInfo": {
+        "organization": "Tech Solutions Inc.",
+        "contact": "Lisa Chen",
+        "email": "lisa.chen@techsolutions.com",
+        "phone": "555-0789"
+      },
+      "menuSelection": {
+        "type": "prix_fixe",
+        "courses": 4,
+        "pricePerPerson": 75.00,
+        "specialDietary": ["2 vegetarian", "1 gluten-free"]
+      },
+      "additionalServices": [
+        "private_dining_room",
+        "av_equipment",
+        "dedicated_server",
+        "welcome_cocktails"
+      ],
+      "totalEstimate": 2125.00,
+      "deposit": 500.00,
+      "balanceDue": 1625.00
+    },
+    "description": "Corporate private dining event booking"
+  }
+]

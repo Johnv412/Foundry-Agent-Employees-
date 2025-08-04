@@ -1,0 +1,185 @@
+[
+  {
+    "type": "member_registration",
+    "socket": "gym",
+    "data": {
+      "memberInfo": {
+        "name": "Sarah Davis",
+        "dateOfBirth": "1990-03-22",
+        "gender": "female",
+        "emergencyContact": {
+          "name": "Tom Davis",
+          "phone": "555-0135",
+          "relationship": "husband"
+        }
+      },
+      "membershipType": "premium",
+      "contactInfo": {
+        "email": "sarah.davis@email.com",
+        "phone": "555-0246",
+        "address": {
+          "street": "789 Fitness Avenue",
+          "city": "Anytown",
+          "state": "ST",
+          "zipCode": "12345"
+        }
+      },
+      "fitnessGoals": ["weight_loss", "muscle_building", "endurance", "flexibility"],
+      "medicalConditions": [],
+      "membershipDuration": "12_months",
+      "startDate": "2024-08-01",
+      "monthlyFee": 79.99,
+      "signupFee": 50.00,
+      "personalTrainerInterest": true,
+      "preferredWorkoutTimes": ["morning", "evening"]
+    },
+    "description": "Premium gym membership registration"
+  },
+  {
+    "type": "class_booking",
+    "socket": "gym",
+    "data": {
+      "memberId": "member_sarah_001",
+      "classId": "yoga_basic_001",
+      "className": "Basic Yoga",
+      "classDate": "2024-08-05T18:00:00.000Z",
+      "duration": 60,
+      "instructorId": "instructor_jane",
+      "instructorName": "Jane Smith",
+      "location": "Studio A",
+      "maxCapacity": 20,
+      "currentBookings": 15,
+      "notes": "First time taking yoga class",
+      "equipmentNeeded": ["yoga mat", "blocks"],
+      "bookingDate": "2024-08-04T10:30:00.000Z"
+    },
+    "description": "Basic yoga class booking"
+  },
+  {
+    "type": "trainer_registration",
+    "socket": "gym",
+    "data": {
+      "trainerInfo": {
+        "name": "Mark Johnson",
+        "email": "mark.johnson@fitness.com",
+        "phone": "555-0777",
+        "dateOfBirth": "1985-09-10",
+        "employeeId": "TRN-001"
+      },
+      "certifications": [
+        {
+          "name": "NASM-CPT",
+          "issueDate": "2020-06-15",
+          "expiryDate": "2024-06-15",
+          "certificationNumber": "NASM-12345"
+        },
+        {
+          "name": "ACSM-CPT",
+          "issueDate": "2021-03-10",
+          "expiryDate": "2025-03-10",
+          "certificationNumber": "ACSM-67890"
+        },
+        {
+          "name": "Yoga Alliance RYT-200",
+          "issueDate": "2022-01-20",
+          "expiryDate": "2026-01-20",
+          "certificationNumber": "RYT-11223"
+        }
+      ],
+      "specialties": ["strength_training", "weight_loss", "yoga", "nutrition", "rehabilitation"],
+      "availability": {
+        "monday": { "start": "06:00", "end": "20:00" },
+        "tuesday": { "start": "06:00", "end": "20:00" },
+        "wednesday": { "start": "06:00", "end": "20:00" },
+        "thursday": { "start": "06:00", "end": "20:00" },
+        "friday": { "start": "06:00", "end": "18:00" },
+        "saturday": { "start": "08:00", "end": "16:00" }
+      },
+      "rates": {
+        "individual": 75.00,
+        "group": 25.00,
+        "online": 50.00,
+        "assessment": 100.00
+      },
+      "experience": "5 years",
+      "bio": "Experienced personal trainer specializing in strength training and weight loss programs."
+    },
+    "description": "Certified personal trainer registration"
+  },
+  {
+    "type": "class_booking",
+    "socket": "gym",
+    "data": {
+      "memberId": "member_john_002",
+      "classId": "hiit_advanced_001",
+      "className": "Advanced HIIT",
+      "classDate": "2024-08-06T19:00:00.000Z",
+      "duration": 45,
+      "instructorId": "instructor_mike",
+      "instructorName": "Mike Rodriguez",
+      "location": "Main Floor",
+      "maxCapacity": 15,
+      "currentBookings": 12,
+      "fitnessLevel": "advanced",
+      "equipmentNeeded": ["kettlebells", "resistance bands"],
+      "membershipLevel": "premium"
+    },
+    "description": "Advanced HIIT class booking"
+  },
+  {
+    "type": "member_registration",
+    "socket": "gym",
+    "data": {
+      "memberInfo": {
+        "name": "Alex Martinez",
+        "dateOfBirth": "1995-11-08",
+        "gender": "male",
+        "emergencyContact": {
+          "name": "Maria Martinez",
+          "phone": "555-0888",
+          "relationship": "mother"
+        }
+      },
+      "membershipType": "basic",
+      "contactInfo": {
+        "email": "alex.martinez@email.com",
+        "phone": "555-0999",
+        "address": {
+          "street": "456 Health Street",
+          "city": "Anytown",
+          "state": "ST",
+          "zipCode": "12345"
+        }
+      },
+      "fitnessGoals": ["muscle_building", "strength"],
+      "medicalConditions": ["asthma"],
+      "membershipDuration": "6_months",
+      "startDate": "2024-08-01",
+      "monthlyFee": 39.99,
+      "signupFee": 25.00,
+      "personalTrainerInterest": false,
+      "preferredWorkoutTimes": ["afternoon"]
+    },
+    "description": "Basic gym membership registration with medical conditions"
+  },
+  {
+    "type": "personal_training_session",
+    "socket": "gym",
+    "data": {
+      "memberId": "member_sarah_001",
+      "trainerId": "trainer_mark_001",
+      "sessionDate": "2024-08-07T16:00:00.000Z",
+      "duration": 60,
+      "sessionType": "individual",
+      "focusArea": "strength_training",
+      "goals": ["increase bench press", "improve squat form"],
+      "location": "Weight Room",
+      "rate": 75.00,
+      "notes": "Member wants to focus on compound movements",
+      "equipmentUsed": ["barbell", "dumbbells", "bench"],
+      "sessionNumber": 3,
+      "packageRemaining": 9
+    },
+    "description": "Individual personal training session"
+  }
+]
